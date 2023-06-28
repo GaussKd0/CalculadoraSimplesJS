@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="div-1">
+            <div class="div-2">
+
+                <h1>
+                    Calculadora
+                </h1>
+
+                <label>
+                    Digite o primeiro número:
+                </label>
+
+                <input id="primeiroNumeroInput">
+
+                <label>
+                    Digite o segundo numero:
+                </label>
+
+                <input id="segundoNumeroInput">
+
+                <label>
+                    <input type="radio" id="somar" name="operacao" value="somar">
+                    Somar
+                </label>
+
+                <label>
+                    <input type="radio" id="subtrair" name="operacao" value="subtrair">
+                    Subtração
+                </label>
+
+                <label>
+                    <input type="radio" id="divisao" name="operacao" value="divisao">
+                    Divisão
+                </label>
+
+                <label>
+                    <input type="radio" id="multiplicacao" name="operacao" value="multplicacao">
+                    Multiplicação
+                </label>
+
+                <button onclick="calcular()">Calcular</button>
+            
+                <label id="res" >0</label>
+            </div>
+        </div>
+    </body>
+</html>
